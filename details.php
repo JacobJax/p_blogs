@@ -15,6 +15,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<?php $title = $blog['title'] ?>
 <?php include 'templates/header.php' ?>
 
     <?php if($blog){ ?>

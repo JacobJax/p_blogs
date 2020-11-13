@@ -13,6 +13,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+    <?php $title = 'Home' ?>
 <?php include 'templates/header.php' ?>
     <header>
         <h3 style="color: #fff;">Welcome to P-Blogs</h3>
@@ -25,7 +26,7 @@
                 <div class="col s12 m6">
                     <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
-                            <p>Created on: <small><?php echo htmlspecialchars($blog['created_on']) ?></small> </p><hr>
+                            <p><small>Created on: <?php echo htmlspecialchars($blog['created_on']) ?></small> </p><hr>
                             <p><?php echo htmlspecialchars($blog['title'])?></p>
                         </div>
                         <div class="card-action">

@@ -47,6 +47,7 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<?php $title = 'Add blog' ?>
 <?php include('templates/header.php'); ?>
 
 	<section class="container grey-text">
