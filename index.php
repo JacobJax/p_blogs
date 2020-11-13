@@ -25,8 +25,8 @@
                 <div class="col s12 m6">
                     <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
-                            <span class="card-title"><?php echo htmlspecialchars($blog['created_on']) ?></span>
-                            <p><?php echo htmlspecialchars($blog['title']) ?></p>
+                            <p>Created on: <small><?php echo htmlspecialchars($blog['created_on']) ?></small> </p><hr>
+                            <p><?php echo htmlspecialchars($blog['title'])?></p>
                         </div>
                         <div class="card-action">
                             <a href="details.php?id=<?php echo $blog['id'] ?>">Read More ></a>
