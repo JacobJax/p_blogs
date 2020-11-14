@@ -61,7 +61,7 @@
         }
 
     </style>
-    <title><?php echo $title ?></title>
+    <title>p_logs</title>
 </head>
 <body>
     <nav>

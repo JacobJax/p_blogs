@@ -1,7 +1,7 @@
 <?php
 
    include 'config/db_config.php';
-   $sql = 'SELECT id, title, email, created_on FROM blogs';
+   $sql = 'SELECT id, title, email, description, illustration, created_on FROM blogs';
 
    $result = mysqli_query($conn, $sql);
    $blogs = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -20,10 +20,25 @@
         <p style="color: #fff;">One stop online platform for latest juicy gossip</p>
     </header>
 
-    <div class="container">
+    <div class="container" style="margin-top: 5px;">
         <div class="row">
             <?php foreach($blogs as $blog){ ?>
                 <div class="col s12 m6">
+                    <div class="card medium">
+                        <div class="card-image">
+                            <img src="<?php echo htmlspecialchars($blog['illustration'])?>">
+                            <span class="card-title"><?php echo htmlspecialchars($blog['title']) ?></span>
+                        </div>
+                        <div class="card-content">
+                        <p><?php echo htmlspecialchars($blog['description']) ?></p>
+                        <p><small>created on: <?php echo htmlspecialchars($blog['created_on']) ?></small></p>
+                        </div>
+                        <div class="card-action">
+                        <a href="details.php?id=<?php echo $blog['id'] ?>">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col s12 m6">
                     <div class="card blue-grey darken-1">
                         <div class="card-content white-text">
                             <p><small>Created on: <?php echo htmlspecialchars($blog['created_on']) ?></small> </p><hr>
@@ -34,7 +49,7 @@
                             <p>Written by: <?php echo htmlspecialchars($blog['email']) ?></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             <?php } ?>
         </div>
     </div>

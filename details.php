@@ -3,7 +3,7 @@
     if(isset($_GET['id'])){
         $id = mysqli_real_escape_string($conn, $_GET['id']);
 
-        $sql = "SELECT email, title, content, created_on FROM blogs WHERE id=$id";
+        $sql = "SELECT email, title, content, illustration, created_on FROM blogs WHERE id=$id";
 
         $result = mysqli_query($conn, $sql);
         $blog = mysqli_fetch_assoc($result);
@@ -24,6 +24,7 @@
             <p>Created on <?php echo $blog['created_on'] ?></p>
         </div>
         <div class="blog-content">
+            <img src="<?php echo $blog['illustration'] ?>" style="width: 800px;">
             <h5 style="border-left: #ff5252 3px solid; padding: 3px; width: 400px;">Written By:<br> <small><?php echo $blog['email'] ?></small>  </h6>
             <p> <?php echo $blog['content'] ?> </p>
         </div>
