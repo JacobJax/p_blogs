@@ -1,5 +1,4 @@
 <?php
-
    include 'config/db_config.php';
    $sql = 'SELECT id, title, email, description, illustration, created_on FROM blogs';
 
