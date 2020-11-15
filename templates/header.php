@@ -6,6 +6,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
         *{
             font-family: 'Roboto Mono', monospace !important;
 
@@ -19,19 +21,52 @@
         }
         nav{
             padding: 5px;
-            background: #ff5252;
+            background: #db4242;
+            position: relative;
         }
 
         header{
-            padding: 100px;
             text-align: center;
-            height: 50vh;
+            height: 60vh;
             background: url('img/pesce-huang-5HD8bIWohNA-unsplash.jpg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
+            padding: 50px;
+            position: absolute;
+            z-index: -10;
+            width: 99vw;
         }
 
+        section{
+            margin: auto;
+            display: grid;
+            place-items: center;
+            margin-top: 30vh;
+        }
+        .blogs{
+            display: grid;
+            place-items: center;
+            /* margin-left: 20%; */
+        }
+
+        .blog{
+            width: 700px;
+            background: #fff;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .card-header, .card-content{
+            padding: 10px;
+        }
+
+        footer{
+            background: #ff5252;
+            padding: 30px;
+            text-align: center;
+            /* width: 100%; */
+        }
         form{
             max-width: 460px;
             margin: 20px auto;
@@ -44,21 +79,30 @@
             background: #ff5252;
             padding: 50px;
             color: #fff;
+            position: absolute;
+            z-index: -10;
+            width: 99vw;
         }
         .blog-content{
             padding: 50px;
             display: grid;
             place-items: center;
             text-align: center;
+            margin-top: 20vh;
         }
-
-        footer{
-            background: #ff5252;
-            padding: 15px;
-            margin-top: 20px;
-            color: #fff;
+        .the-blog{
+            width: 800px;
+            background: #fff;
             text-align: center;
         }
+        .the-blog-content{
+            padding: 30px;
+            text-align: center;
+        }
+        nav, section, footer, header{
+            width: 99vw;
+        }
+
 
     </style>
     <title>p_logs</title>

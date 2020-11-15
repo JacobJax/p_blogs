@@ -19,39 +19,26 @@
         <p style="color: #fff;">One stop online platform for latest juicy gossip</p>
     </header>
 
-    <div class="container" style="margin-top: 5px;">
-        <div class="row">
+    <section class="blogs-section">
+        <div class="blogs">
             <?php foreach($blogs as $blog){ ?>
-                <div class="col s12 m6">
-                    <div class="card medium">
-                        <div class="card-image">
-                            <img src="<?php echo htmlspecialchars($blog['illustration'])?>">
-                            <span class="card-title"><?php echo htmlspecialchars($blog['title']) ?></span>
-                        </div>
-                        <div class="card-content">
+                <div class="blog">
+                    <div class="card-header">
+                        <h5><?php echo htmlspecialchars($blog['email']) ?> | <small><?php echo htmlspecialchars($blog['created_on']) ?></small></h5>
+                    </div>
+                    <div class="card-img">
+                        <img src="<?php echo htmlspecialchars($blog['illustration'])?>" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h5><?php echo htmlspecialchars($blog['title']) ?></h5>
                         <p><?php echo htmlspecialchars($blog['description']) ?></p>
-                        <p><small>created on: <?php echo htmlspecialchars($blog['created_on']) ?></small></p>
-                        </div>
-                        <div class="card-action">
-                        <a href="details.php?id=<?php echo $blog['id'] ?>">Read More</a>
-                        </div>
+                        <a style="font-size: 20px;" href="details.php?id=<?php echo $blog['id'] ?>" class="card-link">Read More ></a>
                     </div>
                 </div>
-                <!-- <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                            <p><small>Created on: <?php echo htmlspecialchars($blog['created_on']) ?></small> </p><hr>
-                            <p><?php echo htmlspecialchars($blog['title'])?></p>
-                        </div>
-                        <div class="card-action">
-                            <a href="details.php?id=<?php echo $blog['id'] ?>">Read More ></a>
-                            <p>Written by: <?php echo htmlspecialchars($blog['email']) ?></p>
-                        </div>
-                    </div>
-                </div> -->
             <?php } ?>
         </div>
-    </div>
+    </section>
+   
     <?php include 'templates/footer.php' ?>
 </body>
 </html>

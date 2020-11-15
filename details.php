@@ -20,13 +20,16 @@
 
     <?php if($blog){ ?>
         <div class="blog-header">
-            <h3><?php echo $blog['title'] ?></h3>
+            <h3><?php echo $blog['title'] ?> | <small>By: <?php echo $blog['email'] ?></small></h3>
             <p>Created on <?php echo $blog['created_on'] ?></p>
         </div>
         <div class="blog-content">
-            <img src="<?php echo $blog['illustration'] ?>" style="width: 800px;">
-            <h5 style="border-left: #ff5252 3px solid; padding: 3px; width: 400px;">Written By:<br> <small><?php echo $blog['email'] ?></small>  </h6>
-            <p> <?php echo $blog['content'] ?> </p>
+            <div class="the-blog">
+                <img src="<?php echo $blog['illustration'] ?>" style="width: 800px;">
+                <div class="the-blog-content">
+                    <p> <?php echo $blog['content'] ?> </p>
+                </div>
+            </div>
         </div>
     <?php }?>
     <?php include 'templates/footer.php' ?>
