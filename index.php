@@ -24,7 +24,7 @@
             <?php foreach($blogs as $blog){ ?>
                 <div class="blog">
                     <div class="card-header">
-                        <h5><?php echo htmlspecialchars($blog['email']) ?> | <small><?php echo htmlspecialchars($blog['created_on']) ?></small></h5>
+                        <h5><small><?php echo htmlspecialchars($blog['email']) ?> | <?php echo htmlspecialchars($blog['created_on']) ?></small></h5>
                     </div>
                     <div class="card-img">
                         <img src="<?php echo htmlspecialchars($blog['illustration'])?>" alt="">

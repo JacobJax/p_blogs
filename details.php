@@ -25,7 +25,7 @@
         </div>
         <div class="blog-content">
             <div class="the-blog">
-                <img src="<?php echo $blog['illustration'] ?>" style="width: 800px;">
+                <img src="<?php echo $blog['illustration'] ?>">
                 <div class="the-blog-content">
                     <p> <?php echo $blog['content'] ?> </p>
                 </div>
