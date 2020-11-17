@@ -96,7 +96,7 @@
 			<br><textarea name="content" id="" cols="30" rows="10" style="height: 90px;"></textarea><br>
 			<div class="red-text"><?php echo $errors['content']; ?></div><br>
             <label>Add image illustration</label>
-            <input class='btn' type="file" name="file"><br>
+            <input class='btn' type="file" name="file" value="Upload"><br>
 			<br><div class="center">
 				<input type="submit" name="submit" value="Submit" class="btn brand z-depth-0">
 			</div>
