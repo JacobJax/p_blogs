@@ -78,6 +78,8 @@ form{
     top: 0;
     z-index: -10;
     width: 100%;
+    display: grid;
+    place-items: center;
 }
 .blog-content{
     padding-top: 50px;
