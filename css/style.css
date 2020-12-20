@@ -89,6 +89,7 @@ form{
     place-items: center;
     text-align: center;
     margin-top: 30vh;
+    background-color: #fff;
 }
 .the-blog{
     width: 95%;
@@ -103,6 +104,7 @@ form{
 .the-blog-content{
     text-align: left;
     font-family: 'Roboto', sans-serif;
+    padding: 7px;
 }
 nav, section, footer, header, .blog-header{
     width: 100%;

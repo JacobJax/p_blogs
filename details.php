@@ -20,12 +20,12 @@
     <?php if($blog){ ?>
         <div class="blog-header">
             <h3><?php echo $blog['title'] ?> | <small>By: <?php echo $blog['email'] ?></small></h3>
-            <p>Created on <?php echo $blog['created_on'] ?></p>
         </div>
         <div class="blog-content">
             <div class="the-blog">
                 <div class="the-blog-img">
                     <img src="<?php echo $blog['illustration'] ?>">
+                    <p><small>Created on <?php echo $blog['created_on'] ?></small></p>
                 </div>
                 <div class="the-blog-content">
                     <p> <?php echo $blog['content'] ?> </p>
