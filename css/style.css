@@ -111,7 +111,7 @@ form{
     font-family: 'Roboto', sans-serif;
     padding: 7px;
 }
-nav, section, footer, header, .blog-header{
+nav, section, footer, header, .blog-header, .a-blog{
     width: 100vw;
 }
 
