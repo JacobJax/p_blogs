@@ -73,6 +73,9 @@ form{
     place-items: center;
 }
 .blog-header{
+    display: grid;
+    place-items: center;
+    color: #fff;
     text-align: center;
     height: 60vh;
     background: #ff5252;
