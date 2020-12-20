@@ -73,13 +73,15 @@ form{
     place-items: center;
 }
 .blog-header{
+    width: 95%;
+    max-width: 800px;
     display: grid;
     place-items: center;
     color: #fff;
     text-align: center;
     height: 60vh;
     background: #ff5252;
-    padding-top: 20px;
+    padding: 10px 5px;
     position: absolute;
     top:0;
     z-index: -10;
