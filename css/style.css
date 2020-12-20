@@ -112,6 +112,6 @@ form{
     padding: 7px;
 }
 nav, section, footer, header, .blog-header{
-    width: 100%;
+    width: 100vw;
 }
 
