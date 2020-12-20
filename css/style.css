@@ -73,19 +73,14 @@ form{
     place-items: center;
 }
 .blog-header{
-    height: 60vh;
     text-align: center;
+    height: 60vh;
     background: #ff5252;
-    padding: 60px;
     padding-top: 20px;
-    color: #fff;
     position: absolute;
-    top: 0;
+    top:0;
     z-index: -10;
-    /* width: 100%; */
-    display: grid;
-    place-items: center;
-    font-size: smaller;
+    width: 99vw;
 }
 .blog-content{
     width: 95%;
