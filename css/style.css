@@ -26,6 +26,7 @@ header{
     background-repeat: true;
     background-attachment: fixed;
     padding: 60px;
+    padding-top: 40px;
     position: absolute;
     top:0;
     z-index: -10;
@@ -71,6 +72,7 @@ form{
     text-align: center;
     background: #ff5252;
     padding: 60px;
+    padding-top: 40px;
     color: #fff;
     position: absolute;
     top: 0;
@@ -78,7 +80,6 @@ form{
     width: 100%;
 }
 .blog-content{
-    padding: 50px;
     display: grid;
     place-items: center;
     text-align: center;
