@@ -68,6 +68,10 @@ form{
     padding: 20px;
 }
 
+.a-blog{
+    display: grid;
+    place-items: center;
+}
 .blog-header{
     height: 60vh;
     text-align: center;
