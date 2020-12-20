@@ -19,8 +19,9 @@
 
     <div class="a-blog">
         <?php if($blog){ ?>
+
             <div class="blog-header">
-                <h3 style="width: 60%; max-width: 800px; text-align: center;"><?php echo $blog['title'] ?> | <small>By: <?php echo $blog['email'] ?></small></h3>
+                <h5><small><?php echo $blog['title'] ?> | By: <?php echo $blog['email'] ?></small></h5>
             </div>
             <div class="blog-content">
                 <div class="the-blog">

@@ -73,8 +73,6 @@ form{
     place-items: center;
 }
 .blog-header{
-    width: 95%;
-    max-width: 800px;
     display: grid;
     place-items: center;
     color: #fff;
@@ -111,7 +109,7 @@ form{
     font-family: 'Roboto', sans-serif;
     padding: 7px;
 }
-nav, section, footer, header, .blog-header, .a-blog{
+nav, section, footer, header{
     width: 100vw;
 }
 
