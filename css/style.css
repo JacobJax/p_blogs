@@ -6,6 +6,7 @@
         
 body{
     background: #f5f5f5;
+    overflow-x: hidden;
 }
 .card-img img{
     object-fit: cover;
@@ -60,6 +61,7 @@ footer{
     background: #ff5252;
     padding: 30px;
     text-align: center;
+    width: 100vw;
 }
 form{
     width: 90%;
@@ -71,19 +73,22 @@ form{
 .a-blog{
     display: grid;
     place-items: center;
+
 }
 .blog-header{
     display: grid;
     place-items: center;
     color: #fff;
     text-align: center;
-    height: 60vh;
+    height: 45vh;
     background: #ff5252;
-    padding: 10px 5px;
     position: absolute;
     top:0;
     z-index: -10;
-    width: 99vw;
+    width: 100vw;
+}
+.blog-header h4{
+    font-size: 2rem;
 }
 .blog-content{
     width: 95%;
@@ -91,7 +96,7 @@ form{
     display: grid;
     place-items: center;
     text-align: center;
-    margin-top: 45vh;
+    margin-top: 30vh;
     /* background-color: #f5f5f5; */
 }
 .the-blog{
@@ -107,9 +112,6 @@ form{
 .the-blog-content{
     text-align: left;
     font-family: 'Roboto', sans-serif;
-    padding: 7px;
-}
-nav, section, footer, header{
-    width: 100vw;
+    padding: 10px;
 }
 
