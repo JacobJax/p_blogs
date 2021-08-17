@@ -1,8 +1,11 @@
-# P-BLOGS
+# P-BLOGS📄
+
+View Live demo [here](https://pblogs.herokuapp.com/)
+
 ![P-Blogs page ](/illustrations/mainpage.PNG)
 
 ## Description
-P-Blogs is a **PHP** Blog site
+P-Blogs is a simple **PHP** CRUD Blog site.
 ___
 ## Languages and Technologies
 * **HTML**
