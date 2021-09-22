@@ -4,7 +4,13 @@
 	// $conn = mysqli_connect('localhost', 'yoshi', 'esting123', 'p_blog');
 
 	#production server
-	$conn = mysqli_connect('b5yo3n25dtjsk7zprnt6-mysql.services.clever-cloud.com', 'ulou9hu6zhfdgc7s', 'A4md4Oys3WEOc5hRoaMo', 'b5yo3n25dtjsk7zprnt6');
+	$db_host = getenv('DB_HOST');
+    $db_port = getenv('DB_PORT');
+    $db_name = getenv('DB_NAME');
+    $db_user = getenv('DB_USER');
+    $db_pwd = getenv('DB_PWD');
+
+	$conn = mysqli_connect("$db_host", "$db_name", "$db_pwd", "$db_name");
 
 	// check connection
 	if(!$conn){
