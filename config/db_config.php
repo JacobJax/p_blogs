@@ -10,7 +10,7 @@
     $db_user = getenv('DB_USER');
     $db_pwd = getenv('DB_PWD');
 
-	$conn = mysqli_connect("$db_host", "$db_name", "$db_pwd", "$db_name");
+	$conn = mysqli_connect("$db_host", "$db_user", "$db_pwd", "$db_name");
 
 	// check connection
 	if(!$conn){
